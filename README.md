@@ -10,7 +10,10 @@ mkdir -p ~/ros2_ws/src
 
 cd ~/ros2_ws/src
 
-git clone https://github.com/jetsonai/ros2_basic
+웹에서 다운로드 받으세요
+https://drive.google.com/file/d/1bWPNJ43AbFW3pFxFrMxxemuaZyk9zbNd/view?usp=sharing
+
+cp ~/Downloads/ros2_ws_exe/* ./
 
 ls
 
