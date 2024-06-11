@@ -14,15 +14,10 @@ class InfoTopicSubscriber(Node):
     def __init__(self):
         super().__init__('rostopic_sub')
         qos_profile = QoSProfile(depth=10)
-        self.basicsrv_subscriber = self.create_subscription(
-            String,
-            'infodata',
-            self.subscribe_info_message,
-            qos_profile)
+        #TODO
 
     def basicsrv_subscriber(self, msg):
-        self.get_logger().info('Received id_num:{0} id_accountnum: {0}'.format(msg.id_num, msg.account))
-
+        #TODO
 
 def main(args=None):
     rclpy.init(args=args)
