@@ -4,6 +4,27 @@
 
 TODO 있습니다.
 
+# ros2 workspace 생성 및 소스 다운로드와 빌드
+
+mkdir -p ~/ros2_ws/src
+
+cd ~/ros2_ws/src
+
+git clone https://github.com/jetsonai/ros_basic
+
+ls
+
+cd
+
+rosdep install -i --from-path src --rosdistro foxy -y
+
+rosdep update
+
+cd ros2_ws/
+
+colcon build
+
+
 # package 생성 테스트
 
 cd ~/ros2_ws/src
