@@ -26,8 +26,8 @@ class BasicClient(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    basic_client = BasicClient()
-    basic_client.send_request()
+    #TODO
+    #TODO
 
     while rclpy.ok():
         rclpy.spin_once(basic_client)
