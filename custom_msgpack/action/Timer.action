@@ -1,0 +1,8 @@
+float32 time_to_wait
+---
+float32 time_elapsed
+uint32 updates_sent
+---
+float32 time_elapsed
+float32 time_remaining
+
