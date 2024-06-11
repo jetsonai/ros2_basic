@@ -13,7 +13,7 @@ cd ~/ros2_ws/src
 웹에서 다운로드 받으세요
 https://drive.google.com/file/d/1bWPNJ43AbFW3pFxFrMxxemuaZyk9zbNd/view?usp=sharing
 
-cp ~/Downloads/ros2_basic-exe/* ./
+cp -rf ~/Downloads/ros2_basic-exe/* ./
 
 ls
 
