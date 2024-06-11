@@ -13,7 +13,7 @@ class BasicService(Node):
 
     def __init__(self):
         super().__init__('srv_server')
-        self.srv = self.create_service(WordCount, 'word_count', self.word_count_callback)
+        #TODO
 
     def word_count_callback(self, request, response):
         response.count = len(request.words.split())
@@ -25,9 +25,9 @@ class BasicService(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    basic_service = BasicService()
+    #TODO
 
-    rclpy.spin(basic_service)
+    #TODO
 
     rclpy.shutdown()
 
