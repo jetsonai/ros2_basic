@@ -14,11 +14,7 @@ class BasicTopicSubscriber(Node):
     def __init__(self):
         super().__init__('rostopic_sub')
         qos_profile = QoSProfile(depth=10)
-        self.basictopic_subscriber = self.create_subscription(
-            String,
-            'counter',
-            self.subscribe_topic_message,
-            qos_profile)
+        #TODO
 
     def subscribe_topic_message(self, msg):
         self.get_logger().info('Received message: {0}'.format(msg.data))
