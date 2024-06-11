@@ -10,7 +10,7 @@ mkdir -p ~/ros2_ws/src
 
 cd ~/ros2_ws/src
 
-git clone https://github.com/jetsonai/ros_basic
+git clone https://github.com/jetsonai/ros2_basic
 
 ls
 
