@@ -16,7 +16,7 @@ class BasicActionClient(Node):
 
     def __init__(self):
         super().__init__('simple_action_client')
-        self._action_client = ActionClient(self, Timer, 'timer')
+        #TODO
 
     def goal_response_callback(self, future):
         goal_handle = future.result()
@@ -33,7 +33,7 @@ class BasicActionClient(Node):
         self.get_logger().info('Received feedback time_elapsed: {0}'.format(feedback.feedback.time_elapsed))
 
     def get_result_callback(self, future):
-        result = future.result().result
+        #TODO
         status = future.result().status
         if status == GoalStatus.STATUS_SUCCEEDED:
             self.get_logger().info('Goal succeeded! time_elapsed: {0}'.format(result.time_elapsed))
@@ -45,10 +45,10 @@ class BasicActionClient(Node):
 
     def send_goal(self):
         self.get_logger().info('Waiting for action server...')
-        self._action_client.wait_for_server()
+        #TODO
 
-        goal_msg = Timer.Goal()
-        goal_msg.time_to_wait = 5.0
+        #TODO
+        #TODO
 
         self.get_logger().info('Sending goal request...')
 
