@@ -8,7 +8,7 @@ from rclpy.node import Node
 from rclpy.qos import QoSProfile
 from std_msgs.msg import String
 from random import random
-from custom_msgpack.msg import Infodata
+#TODO
 
 class InfoTopicPublisher(Node):
 
@@ -20,16 +20,16 @@ class InfoTopicPublisher(Node):
         self.count = 0
 
     def publish_counter_info(self):
-        msg = Infodata()
+        #TODO
         msg.id_num = random()
         msg.account = random()
-        self.info_publisher.publish(msg)
+        #TODO
         self.get_logger().info('Published id_num:{0} id_accountnum: {0}'.format(msg.id_num, msg.account))
 
 
 def main(args=None):
-    rclpy.init(args=args)
-    node = InfoTopicPublisher()
+    #TODO
+    #TODO
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
