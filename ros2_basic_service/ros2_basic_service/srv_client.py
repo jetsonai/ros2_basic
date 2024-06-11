@@ -13,21 +13,21 @@ class BasicClient(Node):
 
     def __init__(self):
         super().__init__('srv_client')
-        self.cli = self.create_client(WordCount, 'word_count')
+        #TODO
         while not self.cli.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('service not available, waiting again...')
-        self.req = WordCount.Request()
+        #TODO
 
     def send_request(self):
-        self.req.words = "Hell ROS World";
+        #TODO
         self.future = self.cli.call_async(self.req)
 
 
 def main(args=None):
     rclpy.init(args=args)
 
-    basic_client = BasicClient()
-    basic_client.send_request()
+    #TODO
+    #TODO
 
     while rclpy.ok():
         rclpy.spin_once(basic_client)
