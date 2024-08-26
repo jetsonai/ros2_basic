@@ -5,12 +5,12 @@
 TODO 있습니다.
 
 
-# ros2 workspace 생성 및 소스 다운로드와 빌드
+## ros2 workspace 생성 
 
 mkdir -p ~/ros2_ws/src
 
 
-# package 생성 테스트
+## package 생성 테스트
 
 cd ~/ros2_ws/src
 
@@ -24,7 +24,7 @@ source ./install/setup.bash
 
 ros2 run testpackage testnode
 
-# 기본 테스트
+## 기본 테스트
 
 gedit .bashrc 수정
 
@@ -35,7 +35,7 @@ https://drive.google.com/file/d/1bWPNJ43AbFW3pFxFrMxxemuaZyk9zbNd/view?usp=shari
 
 탐색기를 이용하여 패키지 파일들을 모두 ros2_ws/src 아래로 옮겨주세요
 
-## ros2_basic_test
+### ros2_basic_test
 
 TODO 수행
 
@@ -50,7 +50,7 @@ ros2 run ros2_basic_test rostopic_pub
 ros2 run ros2_basic_test rostopic_sub
 
 
-## launch 테스트
+### launch 테스트
 
 TODO
 
@@ -59,11 +59,11 @@ colcon build --packages-select ros2_basic_test
 ros2 launch ros2_basic_test basic_test_launch.py
 
 
-## custom_msgpack
+### custom_msgpack
 
 colcon build --packages-select custom_msgpack
 
-## ros2_basic_topicmsg
+### ros2_basic_topicmsg
 
 TODO 수행
 
@@ -73,7 +73,7 @@ ros2 run ros2_basic_topicmsg info_publisher
 
 ros2 run ros2_basic_topicmsg info_subscriber
 
-## ros2_basic_service
+### ros2_basic_service
 
 TODO 수행
 
@@ -83,7 +83,7 @@ ros2 run ros2_basic_service srv_server
 
 ros2 run ros2_basic_service srv_client
 
-## ros2_basic_action
+### ros2_basic_action
 
 TODO 수행
 
