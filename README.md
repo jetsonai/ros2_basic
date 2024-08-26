@@ -49,6 +49,16 @@ ros2 run ros2_basic_test rostopic_pub
 
 ros2 run ros2_basic_test rostopic_sub
 
+
+## launch 테스트
+
+TODO
+
+colcon build --packages-select ros2_basic_test
+
+ros2 launch ros2_basic_test basic_test_launch.py
+
+
 ## custom_msgpack
 
 colcon build --packages-select custom_msgpack
@@ -83,8 +93,5 @@ ros2 run ros2_basic_action simple_action_server
 
 ros2 run ros2_basic_action simple_action_client
 
-ros2 launch ros2_basic_test basic_test_launch.py
-
-colcon build --packages-select ros2_basic_test
 
 
