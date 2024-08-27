@@ -63,6 +63,12 @@ ros2 launch ros2_basic_test basic_test_launch.py
 
 colcon build --packages-select custom_msgpack
 
+### 참고
+builtin_interfaces
+  --> https://docs.ros2.org/galactic/api/builtin_interfaces/msg/Time.html
+rosidl_default_runtime, rosidl_default_generators
+  --> https://github.com/ros2/rosidl_defaults
+
 ### ros2_basic_topicmsg
 
 TODO 수행
