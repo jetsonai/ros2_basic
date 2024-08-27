@@ -108,11 +108,11 @@ ros2 run ros2_basic_action simple_action_client
 
 ## Lidar Sub 예제
 
-colcon build --packages-select lidar_sub_node
+colcon build --packages-select sensor_test_pack
 
 source ./install/setup.bash
 
-ros2 launch sensor_test_pack lidar_sub_node
+ros2 launch sensor_test_pack sensor_test_pack
 
 
 
