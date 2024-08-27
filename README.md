@@ -72,6 +72,11 @@ rosidl_default_runtime, rosidl_default_generators
 
 ### ros2_basic_topicmsg
 
+참고로 이 메시지 전용 패키지는 아래와 같이 만들어야합니다.
+
+ros2 pkg create ros2_basic_topicmsg --build-type ament_cmake --dependencies rclcpp std_msgs  
+
+
 TODO 수행
 
 colcon build --packages-select ros2_basic_topicmsg
