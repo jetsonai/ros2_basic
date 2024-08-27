@@ -112,7 +112,7 @@ colcon build --packages-select sensor_test_pack
 
 source ./install/setup.bash
 
-ros2 launch sensor_test_pack sensor_test_pack
+ros2 launch sensor_test_pack lidar_sub_node
 
 
 
