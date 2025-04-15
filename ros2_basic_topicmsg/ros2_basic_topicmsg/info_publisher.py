@@ -15,21 +15,25 @@ class InfoTopicPublisher(Node):
     def __init__(self):
         super().__init__('info_publisher')
         qos_profile = QoSProfile(depth=10)
-        self.info_publisher = self.create_publisher(Infodata, 'infodata', qos_profile)
+        #TODO
+        
         self.timer = self.create_timer(1, self.publish_counter_info)
         self.count = 0
 
     def publish_counter_info(self):
         #TODO
+        
         msg.id_num = random()
         msg.account = random()
         #TODO
+        
         self.get_logger().info('Published id_num:{0} id_accountnum: {0}'.format(msg.id_num, msg.account))
 
 
 def main(args=None):
     #TODO
     #TODO
+    
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
