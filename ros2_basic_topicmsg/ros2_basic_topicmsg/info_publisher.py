@@ -15,7 +15,7 @@ class InfoTopicPublisher(Node):
     def __init__(self):
         super().__init__('info_publisher')
         qos_profile = QoSProfile(depth=10)
-        self.info_publisher = self.create_publisher(String, 'infodata', qos_profile)
+        self.info_publisher = self.create_publisher(Infodata, 'infodata', qos_profile)
         self.timer = self.create_timer(1, self.publish_counter_info)
         self.count = 0
 
