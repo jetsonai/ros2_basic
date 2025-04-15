@@ -16,7 +16,7 @@ class InfoTopicSubscriber(Node):
         qos_profile = QoSProfile(depth=10)
         #TODO
 
-    def basicsrv_subscriber(self, msg):
+    def subscribe_info_message(self, msg):
         #TODO
 
 def main(args=None):
