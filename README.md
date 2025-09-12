@@ -26,20 +26,20 @@ ros2 run testpackage testnode
 
 ## 기본 테스트
 
-gedit .bashrc 수정
-
-cd ~/ros2_ws/src
-
 웹에서 다운로드 받으세요
 https://drive.google.com/file/d/1bWPNJ43AbFW3pFxFrMxxemuaZyk9zbNd/view?usp=sharing
 
-탐색기를 이용하여 패키지 파일들을 모두 ros2_ws/src 아래로 옮겨주세요
+탐색기를 이용하여 패키지 파일들을 모두 ros2_basic_ws/src 아래로 옮겨주세요
 
 ### ros2_basic_test
 
 TODO 수행
 
-cd ros2_ws/
+cd ros2_basic_ws/ 
+
+혹은
+
+cdbasic
 
 colcon build --packages-select ros2_basic_test
 
