@@ -7,12 +7,12 @@ TODO 있습니다.
 
 ## ros2 workspace 생성 
 
-mkdir -p ~/ros2_ws/src
+mkdir -p /data/ros2_ws/src
 
 
 ## package 생성 테스트
 
-cd ~/ros2_ws/src
+cd /data/ros2_ws/src
 
 ros2 pkg create testpackage --build-type ament_python --dependencies rclpy std_msgs  --node-name testnode
 
