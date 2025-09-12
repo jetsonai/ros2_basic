@@ -16,7 +16,7 @@ cd /data/ros2_ws/src
 
 ros2 pkg create testpackage --build-type ament_python --dependencies rclpy std_msgs  --node-name testnode
 
-cd ~/ros2_ws
+cd /data/ros2_ws
 
 colcon build --packages-select testpackage
 
