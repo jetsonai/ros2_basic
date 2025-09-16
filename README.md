@@ -106,6 +106,53 @@ ros2 run ros2_basic_action simple_action_server
 
 ros2 run ros2_basic_action simple_action_client
 
+--------------------------------------------
+
+# Camera Test
+
+## <putty 터미널> 카메라 pub
+
+export DISPLAY=:0
+
+xhost +
+
+DTA
+
+sensorws
+
+ros2 run cv_basics cam_pub
+
+## <turboVNC> 화면 보기 테스트
+
+터미널 창을 새로 열어주세요
+
+export DISPLAY=:1
+
+xhost +
+
+DTA
+
+export DISPLAY=:1
+
+cd /data/CHECK/
+
+python3 opencvtest.py
+
+## <putty 터미널> 카메라 pub
+
+export DISPLAY=:0
+
+xhost +
+
+DTA
+
+sensorws
+
+ros2 run cv_basics cam_pub
+
+-------------------------------------
+
+
 ## Lidar Sub 예제
 
 colcon build --packages-select sensor_test_pack
