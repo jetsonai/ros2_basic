@@ -138,17 +138,13 @@ cd /data/CHECK/
 
 python3 opencvtest.py
 
-## <putty 터미널> 카메라 pub
+## <putty 터미널> 카메라 보기
 
-export DISPLAY=:0
-
-xhost +
-
-DTA
+화면보기 테스트 하신 창에서 
 
 sensorws
 
-ros2 run cv_basics cam_pub
+ros2 run cv_basics cam_sub
 
 -------------------------------------
 
